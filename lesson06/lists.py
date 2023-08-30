@@ -1,15 +1,15 @@
-users = ['Dave', 'John', 'Sara']
+users = ['Reddy', 'Peppa', 'George']
 
-data = ['Dave', 42, True]
+data = ['Reddy', 50, True]
 
 emptylist = []
 
-print("Dave" in emptylist)
+print("Reddy" in emptylist)
 
 print(users[0])
 print(users[-2])
 
-print(users.index('Sara'))
+print(users.index('George'))
 
 print(users[0:2])
 print(users[1:])
@@ -17,19 +17,22 @@ print(users[-3:-1])
 
 print(len(data))
 
-users.append('Elsa')
+users.append('Vivian')
 print(users)
 
-users += ['Jason']
+users += ['Ellen']
 print(users)
 
 users.extend(['Robert', 'Jimmy'])
 print(users)
 
-# users.extend(data)
-# print(users)
+users.extend(['Robert', 'Jimmy'])
+print(users)
 
-users.insert(0, 'Bob')
+users.extend(data)
+print(users)
+
+users.insert(0, "Bob")
 print(users)
 
 users[2:2] = ['Eddie', 'Alex']
@@ -51,12 +54,12 @@ print(users)
 data.clear()
 print(data)
 
-users[1:2] = ['dave']
-users.sort()
-print(users)
+# users[1:2] = ['reddy']
+# users.sort()
+# print(users)
 
-users.sort(key=str.lower)
-print(users)
+# users.sort(key=str.lower)
+# print(users)
 
 nums = [4, 42, 78, 1, 5]
 nums.reverse()
@@ -66,7 +69,6 @@ print(nums)
 # print(nums)
 
 print(sorted(nums, reverse=True))
-print(nums)
 
 numscopy = nums.copy()
 mynums = list(nums)
@@ -79,15 +81,13 @@ print(mycopy)
 print(nums)
 
 print(type(nums))
-
 mylist = list([1, "Neil", True])
 print(mylist)
 
 # Tuples
 
-mytuple = tuple(('Dave', 42, True))
-
-anothertuple = (1, 4, 2, 8, 2, 2)
+mytuple = tuple(('Reddy', 50, True))
+anothertuple = (1, 4, 2, 8)
 
 print(mytuple)
 print(type(mytuple))
@@ -98,9 +98,10 @@ newlist.append('Neil')
 newtuple = tuple(newlist)
 print(newtuple)
 
-(one, *two, hey) = anothertuple
+(one, two, *hey) = anothertuple
 print(one)
 print(two)
 print(hey)
+
 
 print(anothertuple.count(2))
